@@ -1,0 +1,107 @@
+{
+  "name": "@ddex-workbench/sdk",
+  "version": "1.0.2",
+  "description": "Official SDK for DDEX Workbench - Open-source DDEX validation and processing tools",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "lint": "eslint src --ext .ts",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "prepublishOnly": "npm run build",
+    "docs": "typedoc",
+    "prepack": "npm run build",
+    "version": "npm run format && git add -A src"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "keywords": [
+    "ddex",
+    "ern",
+    "music",
+    "metadata",
+    "validation",
+    "xml",
+    "digital-distribution",
+    "music-industry",
+    "sdk",
+    "api-client",
+    "typescript",
+    "ddex-validation",
+    "ern-validation",
+    "music-api"
+  ],
+  "author": "DDEX Workbench Contributors <support@ddex-workbench.org>",
+  "contributors": [
+    "Kevin Moo <daddykev@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://ddex-workbench.org",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daddykev/ddex-workbench.git",
+    "directory": "packages/sdk"
+  },
+  "bugs": {
+    "url": "https://github.com/daddykev/ddex-workbench/issues",
+    "email": "support@ddex-workbench.org"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/",
+    "tag": "latest"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "form-data": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.10",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "@vitest/coverage-v8": "^1.0.0",
+    "eslint": "^8.0.0",
+    "prettier": "^3.0.0",
+    "tsup": "^8.0.0",
+    "typedoc": "^0.25.0",
+    "typescript": "^5.0.0",
+    "vitest": "^1.0.0"
+  },
+  "peerDependencies": {
+    "typescript": ">=4.5.0"
+  },
+  "peerDependenciesMeta": {
+    "typescript": {
+      "optional": true
+    }
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  },
+  "browser": {
+    "form-data": false
+  },
+  "sideEffects": false,
+  "typesVersions": {
+    "*": {
+      "*": [
+        "dist/index.d.ts"
+      ]
+    }
+  }
+}

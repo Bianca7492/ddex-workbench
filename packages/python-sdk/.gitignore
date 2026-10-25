@@ -1,0 +1,113 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+.env
+
+# Testing
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+.pytest_cache/
+htmlcov/
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+
+# Type checking
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Project specific
+.pypirc  # NEVER commit this!
+test_quick.py
+test_*.xml
+validation_*.txt
+validation_*.json
+report.*
+*.log
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.bak
+*.backup
+
+# packages/python-sdk/.gitignore
+
+# ... existing content ...
+
+# Local test files (not part of official test suite)
+test_integration.py
+test_integration_robust.py
+test_v102_features.py
+test_all.py
+test_*.py  # This will ignore all test_*.py files in root
+!tests/test_*.py  # But NOT ignore files in tests/ directory
+
+# Test outputs
+*.log
+validation-report.svrl
+test-results.xml
+htmlcov/
+.coverage*
+pytest_cache/
+
+# Test environments
+test_env/
+test_install/
+venv*/
+.env
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+*.egg
+*.whl
+
+# PyPI config (NEVER commit these!)
+.pypirc
+.pypi-token
